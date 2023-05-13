@@ -1,0 +1,12 @@
+---
+- hosts: server1
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+   myavr_laplas
+  remote_user:
+   student
+  roles:
+    - nginx 
